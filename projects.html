@@ -9,8 +9,11 @@
 		<title>Projects | Bethany Fulcher Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+		<link rel="stylesheet" href="assets/css/modal.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -51,12 +54,19 @@
 									<span class="image">
 										<img src="images/wizardsAndWhiteboards.png" alt="Wizards and Whiteboards" />
 									</span>
-									<a href="https://wizards-and-whiteboards.herokuapp.com/" target="blank">
+									<!-- href="https://wizards-and-whiteboards.herokuapp.com/" -->
+									<a href="#modal1" class="project modal-trigger" value="Wizards and Whiteboards">
 										<h2>Wizards and Whiteboards</h2>
 										<div class="content">
 											<p>RPG game to practice algorithm challenges.</p>
 										</div>
 									</a>
+									<!-- <button class="project">
+										<h2>Wizards and Whiteboards</h2>
+										<div class="content">
+											<p>RPG game to practice algorithm challenges.</p>
+										</div>
+									</button> -->
 								</article>
 
 								<article class="style2">
@@ -184,8 +194,26 @@
 						</div>
 					</footer>
 
+<!-- PROJECT MODALS -->
 
+<!-- Wizards and Whiteboards -->
+  <div id="modal1" class="modal">
+	  <div class="modal-content">
+		<h2>Wizards and Whiteboards</h2>
 
+		<img class="thumbnail" src="images/wizardsAndWhiteboards.png" alt="Wizards and Whiteboards" />
+		
+      <p>A dungeon-crawler RPG built using React.js and Redux, designed to teach basic coding concepts and provide practice for algorithm challenges to new developers seeking a fun and interactive way to implement their skills. Explore the caverns of Castle Full Stack and gain wisdom from Zac, Aslan, and Denis before facing the ultimate challenge with Joe the Dev Wizard.</p>
+	<p><b>Tools: </b>React, Redux, React-toastify, React-ace, lodash.debounce, uuid, RPG-UI CSS framework, Axios, Express, MongoDB, Bcrypt, Cors, JWT, React-router-dom, HTML, CSS, Javascript</p>
+	
+	<p class="icon solid fa-magic"> Check out the deployed project <a href="https://wizards-and-whiteboards.herokuapp.com/" target="blank" >here</a>!</p>
+	<p class="icon brands fa-github"> Check out the repo <a href="https://github.com/vantango/htmlephant-front-end" target="blank" >here</a>!</p>
+
+	</div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close btn-flat">Close</a>
+    </div>
+  </div>
 
 			</div>
 
@@ -195,6 +223,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/projects.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 	</body>
 </html>
