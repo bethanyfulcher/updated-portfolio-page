@@ -38,6 +38,15 @@ $(document).ready(function () {
                 repo.attr("href", "https://github.com/andrew1835/In_The_Moment")
                 break;
 
+            case "Eat Da Burger":
+                title.text("Eat Da Burger")
+                thumbnail.attr("src","images/eatDaBurger.png")
+                description.text("Eat Da Burger is a full stack web application that allows users to create, update, and delete different burgers. Once a burger is added, it will appear under the section 'Your Burgers' if it has not been devoured and under the other section, 'Devoured Burgers', if the opposite is true. You are able to click on any burger to either eat or create and switch it into the other section. Enjoy!")
+                tools.text("Handlebars.js, Node.js, Express.js, MySQL, JavaScript, HTML, CSS, AJAX, jQuery")
+                deployed.attr("href", "https://eat-da-burger-bf.herokuapp.com/")
+                repo.attr("href", "https://github.com/bethanyfulcher/eat-da-burger")
+                break;
+
             case "Weather Dashboard":
                 title.text("Weather Dashboard")
                 thumbnail.attr("src","images/weatherDashboard.png")
